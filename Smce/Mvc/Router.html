@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Smce\Mvc\Router | SF2 API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Smce_Mvc_Router" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">SF2 API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Smce.html">Smce</a></li>
+                                        <li><a href="../../Smce/Mvc.html">Mvc</a></li>
+    
+                <li>Router</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Router</h1>
+    </div>
+
+    <p>    class
+    <strong>Router</strong></p>
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>URI_SOURCE_GET_URL</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>URI_SOURCE_SERVER_REQUEST_URI</td>
+                <td class="last">
+                    <p><em>
+</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(boolean $defaultRoutes = null)
+                                            <p>\Smce\Mvc\Router constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRewriteUri">getRewriteUri</a>()
+                                            <p>Get rewrite info. This info is read from $<em>GET['</em>url']. This returns '/' if the rewrite information cannot be read</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUriSource">setUriSource</a>(string $uriSource)
+                                            <p>Sets the URI source. One of the URI<em>SOURCE</em>* constants</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeExtraSlashes">removeExtraSlashes</a>(boolean $remove)
+                                            <p>Set whether router must remove the extra slashes in the handled routes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultNamespace">setDefaultNamespace</a>(string $namespaceName)
+                                            <p>Sets the name of the default namespace</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultModule">setDefaultModule</a>(string $moduleName)
+                                            <p>Sets the name of the default module</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultController">setDefaultController</a>(string $controllerName)
+                                            <p>Sets the default controller name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultAction">setDefaultAction</a>(string $actionName)
+                                            <p>Sets the default action name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaults">setDefaults</a>(array $defaults)
+                                            <p>Sets an array of default paths. If a route is missing a path the router will use the defined here
+This method must not be used to set a 404 route</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handle">handle</a>(string $uri = null)
+                                            <p>Handles routing information received from the rewrite engine</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_add">add</a>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null, string $httpMethods = null)
+                                            <p>Adds a route to the router without any HTTP constraint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addGet">addGet</a>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)
+                                            <p>Adds a route to the router that only match if the HTTP method is GET</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPost">addPost</a>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)
+                                            <p>Adds a route to the router that only match if the HTTP method is POST</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPut">addPut</a>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)
+                                            <p>Adds a route to the router that only match if the HTTP method is PUT</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPatch">addPatch</a>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)
+                                            <p>Adds a route to the router that only match if the HTTP method is PATCH</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addDelete">addDelete</a>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)
+                                            <p>Adds a route to the router that only match if the HTTP method is DELETE</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addOptions">addOptions</a>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)
+                                            <p>Add a route to the router that only match if the HTTP method is OPTIONS</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addHead">addHead</a>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)
+                                            <p>Adds a route to the router that only match if the HTTP method is HEAD</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mount">mount</a>(<abbr title="Smce\Mvc\Smce\Mvc\Router\Group">Group</abbr> $group)
+                                            <p>Mounts a group of routes in the router</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_notFound">notFound</a>(array $paths)
+                                            <p>Set a group of paths to be returned when none of the defined routes are matched</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>()
+                                            <p>Removes all the pre-defined routes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNamespaceName">getNamespaceName</a>()
+                                            <p>Returns the processed namespace name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModuleName">getModuleName</a>()
+                                            <p>Returns the processed module name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getControllerName">getControllerName</a>()
+                                            <p>Returns the processed controller name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActionName">getActionName</a>()
+                                            <p>Returns the processed action name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParams">getParams</a>()
+                                            <p>Returns the processed parameters</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMatchedRoute">getMatchedRoute</a>()
+                                            <p>Returns the route that matchs the handled URI</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMatches">getMatches</a>()
+                                            <p>Returns the sub expressions in the regular expression matched</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_wasMatched">wasMatched</a>()
+                                            <p>Checks if the router macthes any of the defined routes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRoutes">getRoutes</a>()
+                                            <p>Returns all the routes defined in the router</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRouteById">getRouteById</a>(int $id)
+                                            <p>Returns a route object by its id</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRouteByName">getRouteByName</a>(string $name)
+                                            <p>Returns a route object by its name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isExactControllerName">isExactControllerName</a>()
+                                            <p>Returns whether controller name should not be mangled</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 54</div>
+        <code>                    
+    <strong>__construct</strong>(boolean $defaultRoutes = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>\Smce\Mvc\Router constructor</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$defaultRoutes</td>
+                <td>defaultRoutes</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRewriteUri">
+        <div class="location">at line 64</div>
+        <code>                    string
+    <strong>getRewriteUri</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get rewrite info. This info is read from $<em>GET['</em>url']. This returns '/' if the rewrite information cannot be read</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUriSource">
+        <div class="location">at line 77</div>
+        <code>                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+    <strong>setUriSource</strong>(string $uriSource)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the URI source. One of the URI<em>SOURCE</em>* constants</p>                    <p><code>
+$router->setUriSource(Router::URI<em>SOURCE</em>SERVER<em>REQUEST</em>URI);
+</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uriSource</td>
+                <td>uriSource</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeExtraSlashes">
+        <div class="location">at line 86</div>
+        <code>                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+    <strong>removeExtraSlashes</strong>(boolean $remove)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set whether router must remove the extra slashes in the handled routes</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$remove</td>
+                <td>remove</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultNamespace">
+        <div class="location">at line 95</div>
+        <code>                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+    <strong>setDefaultNamespace</strong>(string $namespaceName)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the name of the default namespace</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namespaceName</td>
+                <td>namespaceName</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultModule">
+        <div class="location">at line 104</div>
+        <code>                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+    <strong>setDefaultModule</strong>(string $moduleName)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the name of the default module</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$moduleName</td>
+                <td>moduleName</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultController">
+        <div class="location">at line 113</div>
+        <code>                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+    <strong>setDefaultController</strong>(string $controllerName)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the default controller name</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$controllerName</td>
+                <td>controllerName</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultAction">
+        <div class="location">at line 122</div>
+        <code>                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+    <strong>setDefaultAction</strong>(string $actionName)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the default action name</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$actionName</td>
+                <td>actionName</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaults">
+        <div class="location">at line 139</div>
+        <code>                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+    <strong>setDefaults</strong>(array $defaults)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets an array of default paths. If a route is missing a path the router will use the defined here
+This method must not be used to set a 404 route</p>                    <p><code>
+$router->setDefaults(array(
+    'module' => 'common',
+    'action' => 'index'
+));
+</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$defaults</td>
+                <td>defaults</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location">at line 155</div>
+        <code>                    
+    <strong>handle</strong>(string $uri = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Handles routing information received from the rewrite engine</p>                    <p><code>
+//Read the info from the rewrite engine
+$router->handle();</p>
+
+<p>//Manually passing an URL
+$router->handle('/posts/edit/1');
+</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td>uri</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_add">
+        <div class="location">at line 170</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+    <strong>add</strong>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null, string $httpMethods = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds a route to the router without any HTTP constraint</p>                    <p><code>
+$router->add('/about', 'About::index');
+</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>pattern</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Smce\Mvc\string/array">string/array</abbr></td>
+                <td>$paths</td>
+                <td>paths</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$httpMethods</td>
+                <td>httpMethods</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addGet">
+        <div class="location">at line 180</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+    <strong>addGet</strong>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds a route to the router that only match if the HTTP method is GET</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>pattern</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Smce\Mvc\string/array">string/array</abbr></td>
+                <td>$paths</td>
+                <td>paths</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPost">
+        <div class="location">at line 190</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+    <strong>addPost</strong>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds a route to the router that only match if the HTTP method is POST</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>pattern</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Smce\Mvc\string/array">string/array</abbr></td>
+                <td>$paths</td>
+                <td>paths</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPut">
+        <div class="location">at line 200</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+    <strong>addPut</strong>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds a route to the router that only match if the HTTP method is PUT</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>pattern</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Smce\Mvc\string/array">string/array</abbr></td>
+                <td>$paths</td>
+                <td>paths</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPatch">
+        <div class="location">at line 210</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+    <strong>addPatch</strong>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds a route to the router that only match if the HTTP method is PATCH</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>pattern</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Smce\Mvc\string/array">string/array</abbr></td>
+                <td>$paths</td>
+                <td>paths</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addDelete">
+        <div class="location">at line 220</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+    <strong>addDelete</strong>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds a route to the router that only match if the HTTP method is DELETE</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>pattern</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Smce\Mvc\string/array">string/array</abbr></td>
+                <td>$paths</td>
+                <td>paths</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addOptions">
+        <div class="location">at line 230</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+    <strong>addOptions</strong>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a route to the router that only match if the HTTP method is OPTIONS</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>pattern</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Smce\Mvc\string/array">string/array</abbr></td>
+                <td>$paths</td>
+                <td>paths</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addHead">
+        <div class="location">at line 240</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+    <strong>addHead</strong>(string $pattern, <abbr title="Smce\Mvc\string/array">string/array</abbr> $paths = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds a route to the router that only match if the HTTP method is HEAD</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>pattern</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Smce\Mvc\string/array">string/array</abbr></td>
+                <td>$paths</td>
+                <td>paths</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mount">
+        <div class="location">at line 249</div>
+        <code>                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+    <strong>mount</strong>(<abbr title="Smce\Mvc\Smce\Mvc\Router\Group">Group</abbr> $group)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Mounts a group of routes in the router</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Smce\Mvc\Smce\Mvc\Router\Group">Group</abbr></td>
+                <td>$group</td>
+                <td>route</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_notFound">
+        <div class="location">at line 258</div>
+        <code>                    <a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a>
+    <strong>notFound</strong>(array $paths)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set a group of paths to be returned when none of the defined routes are matched</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$paths</td>
+                <td>paths</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router.html"><abbr title="Smce\Mvc\Router">Router</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">at line 264</div>
+        <code>                    
+    <strong>clear</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Removes all the pre-defined routes</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNamespaceName">
+        <div class="location">at line 272</div>
+        <code>                    string
+    <strong>getNamespaceName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the processed namespace name</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModuleName">
+        <div class="location">at line 280</div>
+        <code>                    string
+    <strong>getModuleName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the processed module name</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getControllerName">
+        <div class="location">at line 288</div>
+        <code>                    string
+    <strong>getControllerName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the processed controller name</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActionName">
+        <div class="location">at line 296</div>
+        <code>                    string
+    <strong>getActionName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the processed action name</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParams">
+        <div class="location">at line 304</div>
+        <code>                    array
+    <strong>getParams</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the processed parameters</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMatchedRoute">
+        <div class="location">at line 312</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+    <strong>getMatchedRoute</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the route that matchs the handled URI</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMatches">
+        <div class="location">at line 320</div>
+        <code>                    array
+    <strong>getMatches</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the sub expressions in the regular expression matched</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_wasMatched">
+        <div class="location">at line 328</div>
+        <code>                    bool
+    <strong>wasMatched</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Checks if the router macthes any of the defined routes</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRoutes">
+        <div class="location">at line 336</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>[]
+    <strong>getRoutes</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns all the routes defined in the router</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>[]</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRouteById">
+        <div class="location">at line 345</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+    <strong>getRouteById</strong>(int $id)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns a route object by its id</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>id</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRouteByName">
+        <div class="location">at line 354</div>
+        <code>                    <a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a>
+    <strong>getRouteByName</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns a route object by its name</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Smce/Mvc/Router/Route.html"><abbr title="Smce\Mvc\Router\Route">Route</abbr></a></td>
+            <td>| boolean</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isExactControllerName">
+        <div class="location">at line 362</div>
+        <code>                    boolean
+    <strong>isExactControllerName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns whether controller name should not be mangled</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
