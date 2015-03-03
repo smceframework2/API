@@ -159,7 +159,7 @@
                                                         {"type": "Method", "fromName": "Smce\\Http\\Response", "fromLink": "Smce/Http/Response.html", "link": "Smce/Http/Response.html#method___construct", "name": "Smce\\Http\\Response::__construct", "doc": "&quot;\n&quot;"},
             
             {"type": "Class", "fromName": "Smce\\Mvc", "fromLink": "Smce/Mvc.html", "link": "Smce/Mvc/Acl.html", "name": "Smce\\Mvc\\Acl", "doc": "&quot;\n&quot;"},
-                                                        {"type": "Method", "fromName": "Smce\\Mvc\\Acl", "fromLink": "Smce/Mvc/Acl.html", "link": "Smce/Mvc/Acl.html#method_setRules", "name": "Smce\\Mvc\\Acl::setRules", "doc": "&quot;\n&quot;"},
+                                                        {"type": "Method", "fromName": "Smce\\Mvc\\Acl", "fromLink": "Smce/Mvc/Acl.html", "link": "Smce/Mvc/Acl.html#method_setRule", "name": "Smce\\Mvc\\Acl::setRule", "doc": "&quot;\n&quot;"},
                     {"type": "Method", "fromName": "Smce\\Mvc\\Acl", "fromLink": "Smce/Mvc/Acl.html", "link": "Smce/Mvc/Acl.html#method_getRules", "name": "Smce\\Mvc\\Acl::getRules", "doc": "&quot;\n&quot;"},
                     {"type": "Method", "fromName": "Smce\\Mvc\\Acl", "fromLink": "Smce/Mvc/Acl.html", "link": "Smce/Mvc/Acl.html#method_run", "name": "Smce\\Mvc\\Acl::run", "doc": "&quot;\n&quot;"},
             
