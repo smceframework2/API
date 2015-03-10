@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Smce\Core\Di | Smceframework2 - SF2 API</title>
+    <title>Smce\Mvc\Template | Smceframework2 - SF2 API</title>
 
             <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -16,7 +16,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Smce_Core_Di" data-root-path="../../">
+    <body id="class" data-name="class:Smce_Mvc_Template" data-root-path="../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -61,19 +61,19 @@
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
                                                             <li><a href="../../Smce.html">Smce</a></li>
-                                        <li><a href="../../Smce/Core.html">Core</a></li>
+                                        <li><a href="../../Smce/Mvc.html">Mvc</a></li>
     
-                <li>Di</li>
+                <li>Template</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
-        <h1>Di</h1>
+        <h1>Template</h1>
     </div>
 
     <p>    class
-    <strong>Di</strong></p>
+    <strong>Template</strong></p>
 
     
     
@@ -87,97 +87,87 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Smce\Core\adapter">adapter</abbr> $adapter = NULL)
+                    <a href="#method_setLayout">setLayout</a>(string $layout = &#039;&#039;)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void|<a href="../../Smce/Core/Di/DiCache.html"><abbr title="Smce\Core\Di\DiCache">DiCache</abbr></a>
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_bind">bind</a>(string $key, <abbr title="Smce\Core\Closure">Closure</abbr> $class)
+                    <a href="#method_setLayoutDirectory">setLayoutDirectory</a>(string $layoutDirectory = &#039;&#039;)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<abbr title="Smce\Core\value">value</abbr>|<abbr title="Smce\Core\false">false</abbr>
+                    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_resolve">resolve</a>(string $key)
+                    <a href="#method_getLayout">getLayout</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<abbr title="Smce\Core\new">new</abbr>
+                    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_singleton">singleton</a>(string $key, <abbr title="Smce\Core\Closure">Closure</abbr> $class)
+                    <a href="#method_getLayoutDirectory">getLayoutDirectory</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;bool
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_remove">remove</a>(string $key = &#039;&#039;)
+                    <a href="#method_setView">setView</a>(string $view = &#039;&#039;, array $arr = array())
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;bool
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_has">has</a>(string $key = &#039;&#039;)
+                    <a href="#method_setViewDirectory">setViewDirectory</a>(string $viewDirectory = &#039;&#039;)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void
+                    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_reset">reset</a>()
+                    <a href="#method_getView">getView</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;array
+                    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getKeys">getKeys</a>()
+                    <a href="#method_getViewDirectory">getViewDirectory</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;array
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getAll">getAll</a>()
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;int
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getCount">getCount</a>()
+                    <a href="#method_run">run</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -189,10 +179,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
-        <div class="location">at line 19</div>
+                    <h3 id="method_setLayout">
+        <div class="location">at line 24</div>
         <code>                    void
-    <strong>__construct</strong>(<abbr title="Smce\Core\adapter">adapter</abbr> $adapter = NULL)</code>
+    <strong>setLayout</strong>(string $layout = &#039;&#039;)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -200,8 +190,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Smce\Core\adapter">adapter</abbr></td>
-                <td>$adapter</td>
+                <td>string</td>
+                <td>$layout</td>
                 <td>
 </td>
             </tr>
@@ -225,10 +215,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_bind">
-        <div class="location">at line 29</div>
-        <code>        static            void|<a href="../../Smce/Core/Di/DiCache.html"><abbr title="Smce\Core\Di\DiCache">DiCache</abbr></a>
-    <strong>bind</strong>(string $key, <abbr title="Smce\Core\Closure">Closure</abbr> $class)</code>
+                    <h3 id="method_setLayoutDirectory">
+        <div class="location">at line 31</div>
+        <code>                    void
+    <strong>setLayoutDirectory</strong>(string $layoutDirectory = &#039;&#039;)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -237,192 +227,12 @@
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$key</td>
-                <td>
-</td>
-            </tr>
-                    <tr>
-                <td><abbr title="Smce\Core\Closure">Closure</abbr></td>
-                <td>$class</td>
+                <td>$layoutDirectory</td>
                 <td>
 </td>
             </tr>
             </table>
 
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void|<a href="../../Smce/Core/Di/DiCache.html"><abbr title="Smce\Core\Di\DiCache">DiCache</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_resolve">
-        <div class="location">at line 37</div>
-        <code>        static            <abbr title="Smce\Core\value">value</abbr>|<abbr title="Smce\Core\false">false</abbr>
-    <strong>resolve</strong>(string $key)</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$key</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Smce\Core\value">value</abbr>|<abbr title="Smce\Core\false">false</abbr></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_singleton">
-        <div class="location">at line 46</div>
-        <code>        static            <abbr title="Smce\Core\new">new</abbr>
-    <strong>singleton</strong>(string $key, <abbr title="Smce\Core\Closure">Closure</abbr> $class)</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$key</td>
-                <td>
-</td>
-            </tr>
-                    <tr>
-                <td><abbr title="Smce\Core\Closure">Closure</abbr></td>
-                <td>$class</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Smce\Core\new">new</abbr></td>
-            <td>Di\Singleton</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_remove">
-        <div class="location">at line 55</div>
-        <code>        static            bool
-    <strong>remove</strong>(string $key = &#039;&#039;)</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$key</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_has">
-        <div class="location">at line 64</div>
-        <code>        static            bool
-    <strong>has</strong>(string $key = &#039;&#039;)</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$key</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_reset">
-        <div class="location">at line 70</div>
-        <code>        static            void
-    <strong>reset</strong>()</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
             
                             <h4>Return Value</h4>
 
@@ -441,10 +251,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getKeys">
-        <div class="location">at line 79</div>
-        <code>        static            array
-    <strong>getKeys</strong>()</code>
+                    <h3 id="method_getLayout">
+        <div class="location">at line 38</div>
+        <code>                    string
+    <strong>getLayout</strong>()</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -453,7 +263,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td>string</td>
             <td>
 </td>
         </tr>
@@ -466,10 +276,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getAll">
-        <div class="location">at line 85</div>
-        <code>        static            array
-    <strong>getAll</strong>()</code>
+                    <h3 id="method_getLayoutDirectory">
+        <div class="location">at line 45</div>
+        <code>                    string
+    <strong>getLayoutDirectory</strong>()</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -478,7 +288,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td>string</td>
             <td>
 </td>
         </tr>
@@ -491,10 +301,88 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getCount">
-        <div class="location">at line 93</div>
-        <code>        static            int
-    <strong>getCount</strong>()</code>
+                    <h3 id="method_setView">
+        <div class="location">at line 52</div>
+        <code>                    void
+    <strong>setView</strong>(string $view = &#039;&#039;, array $arr = array())</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arr</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setViewDirectory">
+        <div class="location">at line 59</div>
+        <code>                    void
+    <strong>setViewDirectory</strong>(string $viewDirectory = &#039;&#039;)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$viewDirectory</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getView">
+        <div class="location">at line 66</div>
+        <code>                    string
+    <strong>getView</strong>()</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -503,7 +391,57 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>int</td>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getViewDirectory">
+        <div class="location">at line 73</div>
+        <code>                    string
+    <strong>getViewDirectory</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_run">
+        <div class="location">at line 81</div>
+        <code>                    void
+    <strong>run</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
             <td>
 </td>
         </tr>

@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Smce\Core\Di | Smceframework2 - SF2 API</title>
+    <title>Smce\Core\Queue\QueueListen | Smceframework2 - SF2 API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
-        <script src="../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/typeahead.min.js"></script>
-        <script src="../../sami.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
     
     
     </head>
 
-    <body id="class" data-name="class:Smce_Core_Di" data-root-path="../../">
+    <body id="class" data-name="class:Smce_Core_Queue_QueueListen" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
-                <form id="search-form" action="../../search.html" method="GET">
+                <form id="search-form" action="../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
                    class="typeahead form-control"
@@ -42,16 +42,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../index.html">Smceframework2 - SF2 API</a>
+                <a class="navbar-brand" href="../../../index.html">Smceframework2 - SF2 API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
-                    <li><a href="../../classes.html">Classes</a></li>
-                                            <li><a href="../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../traits.html">Traits</a></li>
-                    <li><a href="../../doc-index.html">Index</a></li>
-                    <li><a href="../../search.html">Search</a></li>
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
                 </ul>
             </div>
         </div>
@@ -60,20 +60,21 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                                                            <li><a href="../../Smce.html">Smce</a></li>
-                                        <li><a href="../../Smce/Core.html">Core</a></li>
+                                                            <li><a href="../../../Smce.html">Smce</a></li>
+                                        <li><a href="../../../Smce/Core.html">Core</a></li>
+                                        <li><a href="../../../Smce/Core/Queue.html">Queue</a></li>
     
-                <li>Di</li>
+                <li>QueueListen</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
-        <h1>Di</h1>
+        <h1>QueueListen</h1>
     </div>
 
     <p>    class
-    <strong>Di</strong></p>
+    <strong>QueueListen</strong></p>
 
     
     
@@ -87,97 +88,77 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Smce\Core\adapter">adapter</abbr> $adapter = NULL)
+                    <a href="#method___construct">__construct</a>($adapter = NULL, $queKey = NULL)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void|<a href="../../Smce/Core/Di/DiCache.html"><abbr title="Smce\Core\Di\DiCache">DiCache</abbr></a>
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_bind">bind</a>(string $key, <abbr title="Smce\Core\Closure">Closure</abbr> $class)
+                    <a href="#method_start">start</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<abbr title="Smce\Core\value">value</abbr>|<abbr title="Smce\Core\false">false</abbr>
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_resolve">resolve</a>(string $key)
+                    <a href="#method_stop">stop</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<abbr title="Smce\Core\new">new</abbr>
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_singleton">singleton</a>(string $key, <abbr title="Smce\Core\Closure">Closure</abbr> $class)
+                    <a href="#method_sleep">sleep</a>(int $duration)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;bool
+                    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_remove">remove</a>(string $key = &#039;&#039;)
+                    <a href="#method_isQue">isQue</a>(string $queKey)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;bool
+                    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_has">has</a>(string $key = &#039;&#039;)
+                    <a href="#method_getLastTransactionTime">getLastTransactionTime</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void
+                    array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_reset">reset</a>()
+                    <a href="#method_status">status</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getKeys">getKeys</a>()
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;array
+                    static&nbsp;<abbr title="Smce\Core\Queue\false">false</abbr>|array
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getAll">getAll</a>()
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;int
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getCount">getCount</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -190,9 +171,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 19</div>
+        <div class="location">at line 23</div>
         <code>                    void
-    <strong>__construct</strong>(<abbr title="Smce\Core\adapter">adapter</abbr> $adapter = NULL)</code>
+    <strong>__construct</strong>($adapter = NULL, $queKey = NULL)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -200,11 +181,17 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Smce\Core\adapter">adapter</abbr></td>
+                <td></td>
                 <td>$adapter</td>
                 <td>
 </td>
             </tr>
+                    <tr>
+                <td></td>
+                <td>$queKey</td>
+                <td>
+</td>
+            </tr>
             </table>
 
             
@@ -225,201 +212,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_bind">
+                    <h3 id="method_start">
         <div class="location">at line 29</div>
-        <code>        static            void|<a href="../../Smce/Core/Di/DiCache.html"><abbr title="Smce\Core\Di\DiCache">DiCache</abbr></a>
-    <strong>bind</strong>(string $key, <abbr title="Smce\Core\Closure">Closure</abbr> $class)</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$key</td>
-                <td>
-</td>
-            </tr>
-                    <tr>
-                <td><abbr title="Smce\Core\Closure">Closure</abbr></td>
-                <td>$class</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void|<a href="../../Smce/Core/Di/DiCache.html"><abbr title="Smce\Core\Di\DiCache">DiCache</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_resolve">
-        <div class="location">at line 37</div>
-        <code>        static            <abbr title="Smce\Core\value">value</abbr>|<abbr title="Smce\Core\false">false</abbr>
-    <strong>resolve</strong>(string $key)</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$key</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Smce\Core\value">value</abbr>|<abbr title="Smce\Core\false">false</abbr></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_singleton">
-        <div class="location">at line 46</div>
-        <code>        static            <abbr title="Smce\Core\new">new</abbr>
-    <strong>singleton</strong>(string $key, <abbr title="Smce\Core\Closure">Closure</abbr> $class)</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$key</td>
-                <td>
-</td>
-            </tr>
-                    <tr>
-                <td><abbr title="Smce\Core\Closure">Closure</abbr></td>
-                <td>$class</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Smce\Core\new">new</abbr></td>
-            <td>Di\Singleton</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_remove">
-        <div class="location">at line 55</div>
-        <code>        static            bool
-    <strong>remove</strong>(string $key = &#039;&#039;)</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$key</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_has">
-        <div class="location">at line 64</div>
-        <code>        static            bool
-    <strong>has</strong>(string $key = &#039;&#039;)</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$key</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_reset">
-        <div class="location">at line 70</div>
-        <code>        static            void
-    <strong>reset</strong>()</code>
+        <code>                    void
+    <strong>start</strong>()</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -441,10 +237,132 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getKeys">
-        <div class="location">at line 79</div>
-        <code>        static            array
-    <strong>getKeys</strong>()</code>
+                    <h3 id="method_stop">
+        <div class="location">at line 36</div>
+        <code>                    void
+    <strong>stop</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sleep">
+        <div class="location">at line 43</div>
+        <code>                    void
+    <strong>sleep</strong>(int $duration)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$duration</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isQue">
+        <div class="location">at line 50</div>
+        <code>                    bool
+    <strong>isQue</strong>(string $queKey)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$queKey</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastTransactionTime">
+        <div class="location">at line 56</div>
+        <code>                    string
+    <strong>getLastTransactionTime</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_status">
+        <div class="location">at line 62</div>
+        <code>                    array
+    <strong>status</strong>()</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -467,8 +385,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAll">
-        <div class="location">at line 85</div>
-        <code>        static            array
+        <div class="location">at line 69</div>
+        <code>        static            <abbr title="Smce\Core\Queue\false">false</abbr>|array
     <strong>getAll</strong>()</code>
     </h3>
     <div class="details">
@@ -478,32 +396,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getCount">
-        <div class="location">at line 93</div>
-        <code>        static            int
-    <strong>getCount</strong>()</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>int</td>
+            <td><abbr title="Smce\Core\Queue\false">false</abbr>|array</td>
             <td>
 </td>
         </tr>
